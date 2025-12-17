@@ -19,10 +19,11 @@ Pod::Spec.new do |s|
   # s.tvos.deployment_target = '15.0'
   # s.watchos.deployment_target = '8.0'
 
-  # 1. 包含所有源码文件（Swift、C 和头文件）
+  # 1. 包含所有源码文件（Swift、C、头文件和包含文件）
   s.source_files = [
     'Sources/MarkdownUI/**/*.swift',
     'Sources/MarkdownUI/Cmake/src/*.c',
+    'Sources/MarkdownUI/Cmake/src/*.inc',
     'Sources/MarkdownUI/Cmake/src/include/*.h',
     'Sources/MarkdownUI/Cmake/extensions/*.c',
     'Sources/MarkdownUI/Cmake/extensions/*.h',
